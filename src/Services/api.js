@@ -1,5 +1,5 @@
 import axios from 'axios';
-const Api_URL=import.meta.env.VITE_API_URL;
+const Api_URL='https://filesharing-backend-gz28.onrender.com';
 export const uploadFile=async(data)=>{
     try{
         let res=await axios.post(`${Api_URL}/upload`,data,{
