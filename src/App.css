@@ -1,0 +1,182 @@
+/* General Body Styling */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+  overflow: hidden; /* Prevent horizontal scrolling */
+}
+
+/* App Container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Headings */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+/* Upload Button */
+.upload-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 146px;
+  height: 61px;
+}
+
+.upload-button p{
+  font-size: 1rem;
+  font-weight: bold;
+}
+.upload-button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+.upload-button:active {
+  transform: translateY(2px);
+}
+
+.upload-button:focus {
+  outline: none;
+}
+
+/* Loader Styling */
+.clock-loader {
+  display: block;
+  margin: 0 auto;
+}
+
+/* File Input Hidden Style */
+input[type="file"] {
+  display: none;
+}
+
+/* Container for the result and button */
+.result-container {
+  display: flex;
+  align-items: center; /* Align link and button vertically */
+  gap: 15px; /* Space between the link and the button */
+  margin-top: 20px; /* Space above the container */
+}
+
+/* Styling for the result link */
+.result-link {
+  color: #007bff; /* Blue color for links */
+  text-decoration: none; /* Remove underline */
+  font-size: 16px; /* Adjust font size */
+  word-break: break-word; /* Handle long URLs by breaking into multiple lines */
+}
+
+.result-link:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* Styling for the copy button */
+.copy-btn {
+  background-color: #007bff; /* Primary blue color */
+  border: none; /* Remove border */
+  color: white; /* White text color */
+  padding: 8px 12px; /* Padding for the button */
+  font-size: 14px; /* Font size */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  display: flex; /* Flexbox for icon alignment */
+  align-items: center; /* Center icon vertically */
+  gap: 5px; /* Space between text and icon (if any) */
+}
+
+.copy-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.copy-btn:disabled {
+  background-color: #cccccc; /* Greyed-out background for disabled state */
+  cursor: not-allowed; /* Not-allowed cursor for disabled button */
+}
+
+.copy-btn svg {
+  width: 16px; /* Icon size */
+  height: 16px; /* Icon size */
+}
+
+/* Optional: Style for container alignment */
+.result-container {
+  justify-content: start; /* Align link and button to the start */
+}
+
+/* Responsive Styles */
+
+/* For Tablets and Smaller Desktops */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  .upload-button {
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+
+  .result-link {
+    font-size: 0.9rem;
+  }
+}
+
+
+/* For Mobile Devices */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 0.9rem;
+  }
+
+  .upload-button {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+    width: 130px;
+    height: 50px;
+  }
+
+  .result-link {
+    font-size: 0.85rem;
+  }
+
+  .clock-loader {
+    size: 30px; /* Reduce loader size on mobile */
+  }
+}
