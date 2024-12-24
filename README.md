@@ -8,3 +8,12 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 - # Preview of the APP:
+![filesharing](https://github.com/user-attachments/assets/ed5602e9-87c7-4d54-93f0-eecf590160d0)
+
+# Features:
+- Automatice File & Collecion Clean UP
+- Button for Copy URL
+- Send any type of file
+- Progressive Web App
+
+Backend Link: https://github.com/Sunanda01/FileSharing_Backend.git
